@@ -1,15 +1,33 @@
 import React from 'react';
-
+import { Jumbotron , Container, Col, Row, Form } from 'react-bootstrap';
 function Contact() {
     return (
-        <div className="card" style={{width: "18rem"}}>
-            <img src="..." className="card-img-top" alt="..." />
-            <div className="card-body">
-                <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a to="#" className="btn btn-primary">Go somewhere</a>
-            </div>
-        </div>
+        <Container style={{backgroundColor:"steelblue"}}>
+          <br></br>
+          <Row>
+          <Col></Col>
+          <Col xs={6} style={{textAlign:"center", fontStyle:"inherit"}}>Contact Me</Col>
+          <Col></Col>
+          </Row>
+          <br></br>
+        <Row>
+          <Col></Col>
+          <Col xs={6}>
+          <Form>
+            <Form.Group controlId="exampleForm.ControlInput1">
+                <Form.Label>Email address</Form.Label>
+                <Form.Control type="email" placeholder="name@example.com" />
+            </Form.Group>
+            <Form.Group controlId="exampleForm.ControlTextarea1">
+                <Form.Label>Example textarea</Form.Label>
+                <Form.Control as="textarea" rows={3} />
+            </Form.Group>
+            </Form>
+          </Col>
+          <Col></Col>
+        </Row>
+        <br></br>
+      </Container>
     )
 }
 

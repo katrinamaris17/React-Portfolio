@@ -1,14 +1,25 @@
 import React from 'react';
+import { Jumbotron, Container, Image, Col, Row } from 'react-bootstrap';
+
 
 function AboutMe() {
     return (
-        <div className="jumbotron">
-        <h1 className="display-4">Hello, world!</h1>
-        <p className="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <hr className="my-4"></hr>
-        <p>It uses utility classNames for typography and spacing to space content out within the larger container.</p>
-        <a className="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-        </div>
+    <Jumbotron fluid>
+        <Container>
+            <Row>
+            <Col></Col>
+            <Col xs={6}>
+            <Image src="url('/me.png')" fluid />
+            <h1>Fluid jumbotron</h1>
+            <p>
+            This is a modified jumbotron that occupies the entire horizontal space of
+            its parent.
+            </p>
+            </Col>
+            <Col></Col>
+            </Row>
+        </Container>
+    </Jumbotron>
     )
 }
 
