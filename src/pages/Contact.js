@@ -1,8 +1,12 @@
 import React from 'react';
 import { Jumbotron , Container, Col, Row, Form } from 'react-bootstrap';
+import {
+  Link
+} from "react-router-dom";
+
 function Contact() {
     return (
-        <Container style={{backgroundColor:"steelblue"}}>
+        <Container style={{backgroundColor:"#98B4D4"}}>
           <br></br>
           <Row>
           <Col></Col>
@@ -19,7 +23,7 @@ function Contact() {
                 <Form.Control type="email" placeholder="name@example.com" />
             </Form.Group>
             <Form.Group controlId="exampleForm.ControlTextarea1">
-                <Form.Label>Example textarea</Form.Label>
+                <Form.Label>Message</Form.Label>
                 <Form.Control as="textarea" rows={3} />
             </Form.Group>
             </Form>

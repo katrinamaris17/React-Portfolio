@@ -5,9 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/Navbar';
 import {
   BrowserRouter as Router,
-  Switch,
   Route,
-  Link
 } from "react-router-dom";
 import AboutMe from './pages/AboutMe';
 import Portfolio from './pages/Portfolio';

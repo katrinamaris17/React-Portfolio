@@ -1,25 +1,33 @@
 import React from 'react';
 import { Jumbotron, Container, Image, Col, Row } from 'react-bootstrap';
-
+import Me from '../Assets/me.png'
+import {
+    Link
+} from "react-router-dom";
 
 function AboutMe() {
     return (
-    <Jumbotron fluid>
-        <Container>
-            <Row>
-            <Col></Col>
-            <Col xs={6}>
-            <Image src="url('/me.png')" fluid />
-            <h1>Fluid jumbotron</h1>
-            <p>
-            This is a modified jumbotron that occupies the entire horizontal space of
-            its parent.
-            </p>
+    // <Jumbotron fluid>
+        <Container style={{backgroundColor:"#98B4D4"}}>
+        <Row>
+            <Col>
+            <br />
+            <Image src={Me} fluid />
+            <br />
             </Col>
-            <Col></Col>
-            </Row>
+            <Col>
+            <br />
+            <h1>Katrina Arando</h1>
+            <br />
+            <p>
+            I am currently learning full-stack web development at the UC Berkeley Coding Boot Camp. I have over 10+ years of successful project management experience in the construction industry. I have a passion for learning new things, solving problems and bringing visions to life. My goal is to parlay my years of professional experience and skill sets into the world of web design and software development. I live in the Bay Area with my family. We love exploring new places together. Please feel free to connect with me through the contact page.
+            </p>
+            <br />
+            <i className="fab fa-instagram"></i>
+            </Col>
+        </Row>
         </Container>
-    </Jumbotron>
+    // </Jumbotron>
     )
 }
 
