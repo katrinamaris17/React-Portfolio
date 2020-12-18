@@ -18,6 +18,12 @@ function Portfolio() {
                     <Col>
                     <h1>Recent Projects</h1>
                     <br />
+                    <h5>Google Book Search - A Virtual Library</h5>
+                    <Link onClick={(e) => (window.location= 'https://google-books-katrina123.herokuapp.com/')}>Click here to test drive</Link>
+                    <ReactPlayer url='https://vimeo.com/492330189' />
+                    </Col>
+                    <Col>
+                    <br />
                     <h5>Project 2 - React App - Weedster</h5>
                     <Link onClick={(e) => (window.location= 'https://weedster.herokuapp.com/')}>Click here to test drive</Link>
                     <ReactPlayer url='https://vimeo.com/489231994' />
